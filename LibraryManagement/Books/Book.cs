@@ -28,17 +28,12 @@ namespace LibrayManagmetn.books {
             Status = status;
             
         }
-        
 
 
-        public void DisplayInfo()
+
+        public override string ToString()
         {
-            Console.WriteLine($"ID: {Id}");
-            Console.WriteLine($"Title: {Title}");
-            Console.WriteLine($"Author: {Author}");
-            Console.WriteLine($"Genre: {Genre}");
-            Console.WriteLine($"Publication Year: {PublicationYear}");
-            Console.WriteLine($"Status: {Status}");
+            return($"{Id}: /n{Title}: /n{Author}: /n{Genre}: /n{PublicationYear}: /n{Status}");
         }
-     }
+    }
 }
